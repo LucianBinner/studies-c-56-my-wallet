@@ -13,7 +13,7 @@ const Dashboard: React.FC = () => {
   ];
   return (
     <Container>
-      <ContentHeader title="Dashboard" lineColor="#fff">
+      <ContentHeader title="Dashboard" lineColor="#e44c4e">
         {/* eslint-disable-next-line */}
         <SelectInput options={name} onChange={() => {}} />
         {/* eslint-disable-next-line */}
