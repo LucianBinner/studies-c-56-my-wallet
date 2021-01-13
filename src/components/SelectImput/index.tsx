@@ -15,18 +15,16 @@ const SelectInput: React.FC<ISelectInputProps> = ({
   options,
   onChange,
   defaultValue,
-}) => {
-  return (
-    <Container>
-      <select onChange={onChange} value={defaultValue}>
-        {options.map((option, index) => (
-          <option value={option.value} key={index}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-    </Container>
-  );
-};
+}) => (
+  <Container>
+    <select onChange={onChange} value={defaultValue}>
+      {options.map((option, index) => (
+        <option value={option.value} key={index}>
+          {option.label}
+        </option>
+      ))}
+    </select>
+  </Container>
+);
 
 export default SelectInput;
